@@ -45,7 +45,7 @@ function getWeather()
       now = rawjson.result.now
       forecasts = rawjson.result.forecasts
       city = location.city
-      -- print(city)
+      print(city)
       menuData = {}
       for k, v in pairs(forecasts) do
          if k == 1 then
@@ -68,5 +68,6 @@ end
 menubar:setTitle('⌛')
 getWeather()
 updateMenubar()
-hs.timer.doEvery(3600, getWeather)
--- hs.timer.new(3600, getWeather):start()
+weatherTimer = hs.timer.new(3600, getWeather)
+weatherTimer:start()
+-- hs.timer.doEvery(3600, getWeather)
