@@ -1,4 +1,5 @@
-local urlApi = 'https://api2.jirengu.com/getWeather.php?city=%E4%B8%8A%E6%B5%B7' -- 上海
+-- local urlApi = 'https://api2.jirengu.com/getWeather.php?city=%E4%B8%8A%E6%B5%B7' -- 上海
+local urlApi = 'http://api2.jirengu.com/getWeather.php?city=%E4%B8%8A%E6%B5%B7' -- 上海
 local menubar = hs.menubar.new()
 local menuData = {}
 
